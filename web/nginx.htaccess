@@ -1,0 +1,2 @@
+# 如果请求的不是真实文件或目录，分发请求至 index.php
+try_files $uri $uri/ /index.php?$args;
