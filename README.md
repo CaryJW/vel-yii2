@@ -161,3 +161,18 @@ $behaviors['corsFilter'] = [
 ### 6. 部署
 
 将前端打包文件放入`web`目录下
+
+### 7. 设置项目运行环境
+
+nginx
+
+- 测试环境：test
+- 生产环境：production
+
+````
+location ~ \.php(.*)$ {
+    ......
+    fastcgi_param  APPLICATION 'production';
+    ......
+}
+````
