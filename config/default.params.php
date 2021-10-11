@@ -9,6 +9,7 @@ return [
     ],
     // 免认证的路径配置
     'allowGuestAction' => [
+        'site/index',
         'site/login',
         'site/captcha',
         'site/test',

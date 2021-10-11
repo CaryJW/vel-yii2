@@ -32,7 +32,7 @@ class SiteController extends BaseController
      */
     public function actionIndex()
     {
-        die('首页');
+        header('Location: /index.html');
     }
 
     /**
